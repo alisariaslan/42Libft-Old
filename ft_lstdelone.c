@@ -6,7 +6,7 @@
 /*   By: msariasl <msariasl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 16:07:13 by msariasl          #+#    #+#             */
-/*   Updated: 2022/10/27 16:07:30 by msariasl         ###   ########.fr       */
+/*   Updated: 2022/12/02 15:10:09 by msariasl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,4 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 	if (!lst)
 		return ;
 	(*del)(lst);
-	free(lst->content);
 }
