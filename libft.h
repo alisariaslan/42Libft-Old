@@ -6,7 +6,7 @@
 /*   By: msariasl <msariasl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 21:35:44 by msariasl          #+#    #+#             */
-/*   Updated: 2022/12/02 15:16:32 by msariasl         ###   ########.fr       */
+/*   Updated: 2022/12/19 20:58:42 by msariasl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,8 +77,7 @@ t_list			*ft_lstnew(void *content);
 t_list			*ft_lstlast(t_list *lst);
 t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
 					void (*del)(void *));
+
 //GET_NEXT_LINE
-char			*ft_get_line(char *str);
-char			*ft_new_str(char *str);
 
 #endif
