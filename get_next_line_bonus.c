@@ -6,7 +6,7 @@
 /*   By: msariasl <msariasl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 13:11:07 by msariasl          #+#    #+#             */
-/*   Updated: 2022/12/19 21:01:52 by msariasl         ###   ########.fr       */
+/*   Updated: 2022/12/19 21:12:34 by msariasl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static char	*parse(char *s, char c)
 		free(s);
 		return (NULL);
 	}
-	str = (char *)malloc(1 * (ft_strlen(s) - i) + 1);
+	str = (char *)malloc(1 * (gnl_ft_strlen(s) - i) + 1);
 	if (!str)
 		return (NULL);
 	i++;
@@ -75,7 +75,7 @@ static char	*next_line(int fd, char *line)
 	if (!str)
 		return (NULL);
 	i = 1;
-	while (!ft_strchr(line, '\n') && i != 0)
+	while (!gnl_ft_strchr(line, '\n') && i != 0)
 	{
 		i = read(fd, str, BUFFER_SIZE);
 		if (i == -1)
@@ -84,7 +84,7 @@ static char	*next_line(int fd, char *line)
 			return (NULL);
 		}
 		str[i] = '\0';
-		line = ft_strjoin(line, str);
+		line = gnl_ft_strjoin(line, str);
 	}
 	free(str);
 	return (line);

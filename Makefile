@@ -6,7 +6,7 @@
 #    By: msariasl <msariasl@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/04 21:32:18 by msariasl          #+#    #+#              #
-#    Updated: 2022/10/27 15:53:38 by msariasl         ###   ########.fr        #
+#    Updated: 2022/12/19 21:08:04 by msariasl         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,7 +56,7 @@ release:
 	$(RM) *.o
 	$(NORM)
 
-debug:
+d:
 	clear
 	gcc *.c
 	./a.out

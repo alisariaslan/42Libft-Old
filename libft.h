@@ -6,7 +6,7 @@
 /*   By: msariasl <msariasl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 21:35:44 by msariasl          #+#    #+#             */
-/*   Updated: 2022/12/19 21:06:44 by msariasl         ###   ########.fr       */
+/*   Updated: 2022/12/19 21:09:57 by msariasl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,9 @@ t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
 					void (*del)(void *));
 //GET_NEXT_LINE
 char			*get_next_line(int fd);
+int				gnl_ft_strlen(char *s);
+char			*gnl_ft_strjoin(char *s1, char *s2);
+char			*gnl_ft_strchr(const char *s, int c);
 //PRINTF
 int				ft_putchar(char c);
 int				ft_printpercent(void);
