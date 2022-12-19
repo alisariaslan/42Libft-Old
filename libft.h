@@ -6,7 +6,7 @@
 /*   By: msariasl <msariasl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 21:35:44 by msariasl          #+#    #+#             */
-/*   Updated: 2022/12/19 20:58:42 by msariasl         ###   ########.fr       */
+/*   Updated: 2022/12/19 21:06:44 by msariasl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@
 # include <ctype.h>
 # include <stddef.h>
 # include <fcntl.h>
+# include "stdarg.h"
 
 typedef struct s_list
 {
@@ -77,7 +78,18 @@ t_list			*ft_lstnew(void *content);
 t_list			*ft_lstlast(t_list *lst);
 t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
 					void (*del)(void *));
-
 //GET_NEXT_LINE
-
+char			*get_next_line(int fd);
+//PRINTF
+int				ft_putchar(char c);
+int				ft_printpercent(void);
+int				ft_printstr(char *s);
+int				ft_printnbr(int n);
+int				ft_putnbr(int n);
+int				ft_print_unsigned(unsigned int n);
+int				ft_print_hex(unsigned int n, const char format);
+int				ft_print_ptr(unsigned long long n);
+int				ft_printf(const char *str, ...);
+void			ft_putstr(char *s);
+void			ft_put_hex(unsigned int n, const char format);
 #endif
