@@ -1,20 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msariasl <msariasl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/27 16:07:13 by msariasl          #+#    #+#             */
-/*   Updated: 2023/03/28 10:37:21 by msariasl         ###   ########.fr       */
+/*   Created: 2023/03/28 10:17:40 by msariasl          #+#    #+#             */
+/*   Updated: 2023/03/28 11:36:29 by msariasl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/* THIS FILE WILL NOT COMPILE !*/
+
 #include "libft.h"
 
-void	ft_lstdelone(t_list *lst, void (*del)(void*))
+int main(int argc, char **argv)
 {
-	if (!lst)
-		return ;
-	(*del)(lst);
+       ft_printf("\n");
+       int fd = open("README.md",O_RDONLY);
+       ft_printf("%s",get_next_line(fd));
+       ft_printf("%s",get_next_line(fd));
+       ft_printf("%s",get_next_line(fd));
+       ft_printf("%s",get_next_line(fd));
 }

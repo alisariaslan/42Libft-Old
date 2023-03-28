@@ -6,11 +6,11 @@
 /*   By: msariasl <msariasl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 13:56:03 by msariasl          #+#    #+#             */
-/*   Updated: 2022/12/19 21:06:06 by msariasl         ###   ########.fr       */
+/*   Updated: 2022/12/09 13:56:04 by msariasl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
 //COUNTS DIGITS
 int	ft_len_hex(unsigned int n)

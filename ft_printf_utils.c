@@ -6,11 +6,11 @@
 /*   By: msariasl <msariasl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 13:55:47 by msariasl          #+#    #+#             */
-/*   Updated: 2022/12/19 21:06:13 by msariasl         ###   ########.fr       */
+/*   Updated: 2022/12/09 13:55:49 by msariasl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
 //PRINT ONE CHAR
 int	ft_putchar(char c)

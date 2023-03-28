@@ -5,14 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: msariasl <msariasl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/19 10:27:36 by ali               #+#    #+#             */
-/*   Updated: 2022/10/25 22:53:02 by msariasl         ###   ########.fr       */
+/*   Created: 2022/12/09 13:56:08 by msariasl          #+#    #+#             */
+/*   Updated: 2023/03/28 11:04:17 by msariasl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	int	ft_len(int n, int t)
+//COUNTS DIGIT
+int	ft_len(int n, int t)
 {
 	int	i;
 

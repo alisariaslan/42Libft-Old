@@ -6,11 +6,11 @@
 /*   By: msariasl <msariasl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/07 17:06:04 by mkucukku          #+#    #+#             */
-/*   Updated: 2022/12/19 21:06:16 by msariasl         ###   ########.fr       */
+/*   Updated: 2022/12/15 13:25:57 by msariasl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
 //DETECTOR
 int	ft_formats(va_list args, const char format)
